@@ -1,0 +1,139 @@
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Login Page</h1>
+	<form>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		
+		<input type="button" value="Login" onclick="login()">
+	</form>
+
+	<script>
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if (username === "ooadteam" && password === "ooadteam") {
+				window.location.href = "welcome";
+			} else {
+				alert("Invalid username or password");
+			}
+		}
+	</script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Add Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<style>
+		/* Add custom styles */
+		body {
+			background-color: #F5E3EA;
+		}
+		.card {
+			margin-top: 50px;
+			background-color: #F8D7DA;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+		}
+		.card-header {
+			background-color: #FADBD8;
+			color: #fff;
+			text-align: center;
+			font-weight: bold;
+			font-size: 24px;
+			border-bottom: none;
+		}
+		.card-body {
+			background-color: #F8D7DA;
+			padding: 20px;
+		}
+		.btn-pink {
+			background-color: #E91E63;
+			border-color: #E91E63;
+		}
+        .pes-logo {
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .trustworthy-text {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 24px;
+            color: #E91E63;
+            font-weight: bold;
+        }
+        @media screen and (min-width: 768px) {
+            .card {
+                margin-top: 50px;
+                margin-right: auto;
+            }
+        }
+	</style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                
+                <p class="trustworthy-text">At PES Bank, we are committed to providing our customers with the highest level of security and trustworthiness. Your financial safety is our top priority, and we utilize the latest technology and practices to ensure your peace of mind.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">PES BANK</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" class="form-control">
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="button" class="btn btn-pink" onclick="login()">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- Add Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<script>
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if (username === "ooadteam" && password === "ooadteam") {
+				window.location.href = "welcome";
+			} else {
+				alert("Invalid username or password");
+			}
+		}
+	</script>
+</body>
+</html>
